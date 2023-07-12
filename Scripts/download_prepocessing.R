@@ -12,11 +12,11 @@ dir.create("Products",recursive = T,showWarnings = F)
 dir.create("Data",recursive = T,showWarnings = F)
 
 for (k in 2020:2022) {
-  download.file(paste("https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS/.v2p0/.daily-improved/.global/.0p05/.prcp/Y/-40/0.5/40/GRID/X/-25/0.5/55/GRID/T/(1%20Jun%20",k,")/(31%20Octc%20",k,")/RANGEEDGES/data.nc",sep=""),destfile =paste("Data/",k,".nc",sep = "" ))
+  download.file(paste("https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS/.v2p0/.daily-improved/.global/.0p05/.prcp/Y/-40/0.5/40/GRID/X/-25/0.5/55/GRID/T/(1%20Jan%20",k,")/(31%20Decc%20",k,")/RANGEEDGES/data.nc",sep=""),destfile =paste("Data/",k,".nc",sep = "" ))
   
 }
 
-
+https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.ARC2/.daily/.est_prcp/?Set-Language=fr
 
 rm(list = ls())
 
